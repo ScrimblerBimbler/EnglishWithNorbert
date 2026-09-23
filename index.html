@@ -1154,11 +1154,10 @@
       event.preventDefault();
       const name = document.getElementById('studentName').value;
       const email = document.getElementById('studentEmail').value;
-      const lessonType = document.getElementById('lessonType').value;
       const format = document.getElementById('meetingFormat').value;
       const notes = document.getElementById('studentNotes').value;
 
-      const subject = encodeURIComponent(`English Lesson Inquiry from ${name} (${lessonType})`);
+      const subject = encodeURIComponent(`English Lesson Inquiry from ${name}`);
       const body = encodeURIComponent(
         `Hi Norbert,
 
